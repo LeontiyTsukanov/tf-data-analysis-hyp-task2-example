@@ -6,6 +6,6 @@ chat_id = 407415686 # Ваш chat ID, не меняйте название пе�
 
 def solution(x: np.array, y: np.array) -> bool:
     flag = False
-    if MMD(compute_kernel = "rbf", gamma = 0.7).test(h[a], m3[b])[1] >= 0.03:
+    if MMD(compute_kernel = "rbf", gamma = 0.7).test(x, y)[1] >= 0.03:
         flag = True
     return flag # Ваш ответ, True или False
