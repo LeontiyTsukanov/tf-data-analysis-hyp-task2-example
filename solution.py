@@ -5,7 +5,7 @@ from hyppo.ksample import MMD
 chat_id = 407415686 # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array, y: np.array) -> bool:
-    flag = False
+    flag = True
     if MMD(compute_kernel = "rbf", gamma = 0.7).test(x, y)[1] >= 0.03:
-        flag = True
+        flag = False
     return flag # Ваш ответ, True или False
